@@ -1,13 +1,25 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class='main'>
+  <view  wx:for="{{array}}">
+    <view class="zhItem" bindtap="bindViewTap">
+      <view class="comment">
+        <text class="comment_num">{{item.comment_count}}</text>
+        <text class="comment_text">评论</text>
+      </view>
+      <view class="content">
+        <text class='content_text'>{{item.content}}</text>
+        <view class="content_info">
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+          <text class="userinfo-nickname">{{item.user_name}}</text>
+          <text class="create_time">{{item.create_time}}</text>
+          <image bindtap="bindViewTap" class="view_icon" src="../../images/234.png" background-size="cover" mode="aspectFill"></image>
+          <text class="view_count">{{item.create_time}}</text>
+        </view>
+        <view class='divider'></view>
+      </view>
+    </view> 
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <text class="load_more" hidden="{{ loadingHidden }}">
+    加载中...
+  </text>
 </view>

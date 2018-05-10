@@ -1,21 +1,113 @@
 /**index.wxss**/
-.userinfo {
+
+.main{
+display: flex;
+  flex-direction:column;
+}
+
+
+.usermotto {
+  background: gray;
+}
+
+.comment{
+width: 110rpx;
+margin-left: 0rpx;
+display: flex;
+flex-direction:column;
+margin-right: 20rpx;
+}
+
+.content{
+  width: 590rpx;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction:column;
+}
+.zhItem{
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  margin-top: 25rpx;
+}
+
+.comment_num{
+  
+  color: #FD4C5B;
+  font-size:35rpx;
+  text-align:right;
+  font-weight:bold;
+}
+
+.comment_text{
+  color: #cccccc;
+  font-size:20rpx;
+  text-align:right;
+  margin-top: -3rpx;
+}
+
+.content_text{
+  margin-top: 5rpx;
+  font-size:30rpx;
+  text-align:left;
+  display: -webkit-box ;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2; 
+}
+
+.divider{
+  margin-top: 30rpx;
+  height: 1px;
+  background: #efefef;
+  margin-right: 15rpx;
+}
+
+.content_info{
+  display: flex;
+  flex-direction:row;
+  margin-top: 20rpx;
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+  width: 35rpx;
+  height: 35rpx;
   border-radius: 50%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.userinfo-nickname{
+  font-size: 23rpx;
+  margin-left: 10rpx;
+  align-self:center;
+  color: black;
 }
 
-.usermotto {
-  margin-top: 200px;
+.create_time{
+  font-size: 20rpx;
+  margin-left: 25rpx;
+  align-self:center;
+  color: gray;
+}
+
+.view_icon{
+  width: 34rpx;
+  height: 22rpx;
+  align-self:center;
+  margin-left: 25rpx;
+}
+
+.view_count{
+  font-size: 20rpx;
+  margin-left: 5rpx;
+  align-self:center;
+  color: gray;
+}
+
+.load_more{
+  font-size: 20rpx;
+  align-self:center;
+  color: gray;
+  justify-content:center;
+  margin-bottom: 15rpx;
 }
