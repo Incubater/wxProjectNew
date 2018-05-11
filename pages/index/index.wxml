@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class='main'>
-  <view  wx:for="{{array}}">
-    <view class="zhItem" bindtap="bindViewTap">
+  <view  wx:for="{{array}}" >
+    <view class="zhItem" bindtap="click_item" data-hi="{{item}}">
       <view class="comment">
         <text class="comment_num">{{item.comment_count}}</text>
         <text class="comment_text">评论</text>

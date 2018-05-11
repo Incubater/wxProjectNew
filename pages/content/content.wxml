@@ -1,0 +1,70 @@
+<!--pages/content/content.wxml-->
+<view class='main'>
+  <text class='title'>【分析】吉克的心路历程</text>
+  <view class='user_info'>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view class='userinfo_content'>
+      <text class='userinfo_name'>qiaojie</text>
+      <text class='userinfo_info'>进击的巨人分析吧</text>
+    </view>
+    <text class='attention'>+ 关注</text>
+  </view>
+  <view class='content_view'>
+    <text class='content'>105话终于揭示了吉克是整个艾族复兴计划的重要成员，这样的反转是在太惊人，以致之前好多人不相信吉克会跳反。但现在回过头来看，吉克继承王血加上艾伦获得始祖，2人双剑合璧就可召唤地鸣，整个艾族复兴计划跃然纸上，简直完美。因此我们可以断定，吉克的跳反不是一时兴起，而是整个计划的一部分。根据剧情的合理性，我推测出了这样一条吉克的剧情线：
+
+    1. 吉克7岁时，枭暗中告诉吉克：格里沙欺骗了你，他其实是马莱的叛徒。于是幼年吉克天真的告发了自己的父母，同时枭告诫吉克一定要保守自己有王血的秘密，不然会被当作叛军处死
+
+    2. 格里沙被捕流放，印证了枭的说法，吉克从此坚信了枭的说法，成为了一名坚定的马莱战士
+
+    3. 吉克攻岛，从莱纳口中得知了艾伦的存在，推测出格里沙上岛后仍然在执行反叛的计划，因此吉克第一次遇到艾伦时说他被父亲骗了并要救他出去
+
+    4. 艾伦拿到格里沙的笔记本，此时道网络建立起记忆连接，艾伦获知了一部分墙外历史。与此同时，吉克的道网络也建立起了记忆连接，整个复兴计划的步骤全部呈现在吉克脑中，此时吉克才真正跳反，并派出自己的心腹艾莲娜与岛上接触，共商复兴大计
+
+    5. 艾伦根据艾莲娜带来的信物，再次与道网络建立记忆连接，获知了此时奇袭马莱的作战计划。于是，艾伦向调查兵团提出攻打马莱，而调查兵团对计划并不知情，对艾伦如此大胆的作战计划完全无法接受。艾伦于是单独行动，后面的事情大家都知道了</text>
+  </view>
+  <view class='user_action'> 
+    <button class='action_btn'>
+      <image class="share_icon" src="/images/share.png" mode="aspectFill">
+      </image>
+      分享
+    </button>
+    <button class='action_btn action_like'>
+      <image class="share_icon" src="/images/like.png" mode="aspectFill"></image>
+      5
+    </button>
+  </view>
+  <view class='divider'></view>
+  <view class='comment' wx:for="{{array}}" >
+    <view class="comment_item" >
+      <view class='user_info'>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <view class='userinfo_content'>
+          <text class='userinfo_name'>{{item.username}}</text>
+          <text class='userinfo_info'>{{item.floor}}</text>
+        </view>
+        <view class='comment_user_action'>
+          <image class="comment_like" src="/images/like.png" mode="aspectFill"></image>
+          <text class='commment_like_count'>{{item.like_count}}</text>
+          <image class="comment_comment" src="/images/commet.png" mode="aspectFill"></image>
+        </view>    
+      </view>
+      <view class='comment_view'>
+        <text class='comment_content'>{{item.content}}</text>
+      </view>
+      <view class='reply' wx:if="{{item.have_reply}}" wx:for="{{item.comment}}"   wx:for-item="reply">
+        <text class='reply_username'>{{reply.username}}</text>
+        <text class='reply_content'>{{reply.comment}}</text>
+      </view>
+      <view class='more_reply' wx:if="{{item.have_more_reply}}">
+        <text class='more_reply_text'>查看全部{{item.more_reply_count}}条评论></text>
+      </view>
+    </view>
+    <view class='comment_divider'></view>
+  </view>
+  <view class='bottom'></view>
+  <view class='input_view'>
+    <view class='comment_divider'></view>
+    <textarea class='input' auto-height placeholder='说说你的看法' placeholder-style="color:lightgray;" fixed="true"></textarea>
+    <text class='enter'>发表</text>
+  </view>
+</view>

@@ -95,5 +95,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  click_item: function (event) {
+    console.log(event)
+    wx.navigateTo({
+      url: '../content/content'
+    })
   }
+  
 })
