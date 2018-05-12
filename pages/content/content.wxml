@@ -53,11 +53,12 @@
       </view>
       <view class='reply' wx:if="{{item.have_reply}}" wx:for="{{item.comment}}"   wx:for-item="reply">
         <text class='reply_username'>{{reply.username}}</text>
-        <text class='reply_content'>{{reply.comment}}</text>
+        <text class='reply_content'>：{{reply.comment}}</text>
       </view>
       <view class='more_reply' wx:if="{{item.have_more_reply}}">
         <text class='more_reply_text'>查看全部{{item.more_reply_count}}条评论></text>
       </view>
+      <view class='marging_bottom'></view>
     </view>
     <view class='comment_divider'></view>
   </view>

@@ -186,7 +186,6 @@
   margin-left: 115rpx;
   padding-left: 10rpx;
   margin-right: 40rpx;
-  margin-bottom: 30rpx;
   padding-bottom: 5rpx;
 }
 
@@ -199,4 +198,9 @@
 .bottom{
   height: 90rpx;
   color: white;
+}
+
+.marging_bottom{
+  height: 30rpx;
+  background: white;
 }

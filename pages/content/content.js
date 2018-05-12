@@ -11,7 +11,7 @@ Page({
     hasUserInfo: false,
     array: [
       { username: '华研明日破产', floor: '第2楼', like_count: '0', content: '这么说，从某种意义上来讲，艾伦能通过脑波与大哥吉克交流', have_reply: false, have_more_reply: false,more_reply_count:'0' , comment:[{ username: '', comment: '' }]},
-      { username: 'qiaojie', floor: '第3楼', like_count: '4', content: '这么推测的理由是吉克在第一次攻打天堂岛时完全没有跳反的意思，如果此时他要跳反，则完全可以非常轻松的解决掉3个马莱巨人，提前4年实现计划。因此，有充分的理由推断吉克在攻打天堂岛时对复兴计划一无所知，而只是一个坚定的马莱战士。而攻岛后一年，吉克即派出了艾莲娜与岛上接触，可以肯定吉克此时已经跳反。所以吉克跳反的时间点，就在攻岛失败之后并在派遣调查舰队之前，那么最合理的时间应该就是艾伦拿到笔记本的那个时间点。', have_reply: true, have_more_reply: true, more_reply_count: '0', comment: [{ username: '磁力大炮', comment: '：这个算是目前说得过去的最合适的理由了' }]},
+      { username: 'qiaojie', floor: '第3楼', like_count: '4', content: '这么推测的理由是吉克在第一次攻打天堂岛时完全没有跳反的意思，如果此时他要跳反，则完全可以非常轻松的解决掉3个马莱巨人，提前4年实现计划。因此，有充分的理由推断吉克在攻打天堂岛时对复兴计划一无所知，而只是一个坚定的马莱战士。而攻岛后一年，吉克即派出了艾莲娜与岛上接触，可以肯定吉克此时已经跳反。所以吉克跳反的时间点，就在攻岛失败之后并在派遣调查舰队之前，那么最合理的时间应该就是艾伦拿到笔记本的那个时间点。', have_reply: true, have_more_reply: false, more_reply_count: '0', comment: [{ username: '磁力大炮', comment: '这个算是目前说得过去的最合适的理由了' }]},
       { username: '勾三股四弦五', floor: '第4楼', like_count: '1', content: '李菊福', have_reply: false, have_more_reply: false, more_reply_count: '0' , comment: [{ username: '', comment: '' }] },
       { username: '-窘龙-', floor: '第5楼', like_count: '8', content: '终于有人觉得当年枭和吉克有沟通了我觉得这个比吉克自己想以一人之力复兴艾尔迪亚民族要靠谱多了。估计到目前为止，也基本还在枭的计划内，只不过可能时间有些推后而已', have_reply: false, have_more_reply: false, more_reply_count: '0', comment: [{ username: '', comment: '' }] },
       {
